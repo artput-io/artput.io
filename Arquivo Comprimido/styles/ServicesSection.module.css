@@ -1,0 +1,104 @@
+.container {
+    padding-top:4rem;
+    padding-bottom:4rem;
+    min-height: 40rem;
+    background-color: var(--background2-color)
+}
+
+.title {
+    font-size:4rem;
+    font-family: "Space Mono";
+    color: var(--white-color);
+    text-align: center;
+}
+
+.slider {
+    color:var(--white-color);
+    padding: 3rem 0rem;
+}
+
+.slide {
+    min-height: 25rem;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding:1rem 3.5rem;
+}
+
+.icon {
+    font-size: 2rem;
+    padding:.9rem;
+    margin:1rem 0;
+}
+
+.slideTitle {
+    font-family: "Space Mono";
+    font-size: 2.3rem;
+    text-transform: uppercase;
+}
+
+.text {
+    font-family: "Ubuntu";
+    font-size: 1.3rem;
+}
+
+@media screen and (min-width: 768px) {
+    .slideBlock {
+        width:24.5%;
+        background-color: var(--background-color);
+        border-radius: 0.7rem;
+    }
+
+    .slide {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .slider div:nth-last-child() {
+        display: none;
+    }
+
+    .swiper-wrapper div {
+        display: block;
+    }
+
+    .slider div:nth-of-type(2) {
+        display: none;
+    }
+
+    .slider div:last-of-type {
+        display: none;
+    }
+
+    .slider div div:nth-of-type(2) {
+        display: block;
+    }
+
+    .slider div div:last-of-type {
+        display: block;
+    }
+
+    .slider div{
+        overflow:hidden !important;
+        transform:none !important
+    }
+
+    .slider {
+        padding:3.5rem 1rem;
+    }
+
+    .slide:hover {
+        color:var(--background3-color);
+        background-color: var(--white-color);
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 16px 48px;
+        transition: all .4s;
+    }
+
+    .slide:hover .icon {
+        background-color:var(--background3-color);
+        color: var(--white-color);
+        border-radius:2rem;
+        transition: all .6s;
+    }
+
+}

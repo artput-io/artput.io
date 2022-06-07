@@ -31,7 +31,7 @@ module.exports = {
       }
     },
     fontFamily: {
-      passionOne: ['"Passion One"', 'sans-serif'],
+      passionOne: ['"Space Mono"', 'sans-serif'],
       ubuntu: ['Ubuntu', 'sans-serif']
     }
   },
