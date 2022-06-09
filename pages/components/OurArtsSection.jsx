@@ -9,6 +9,7 @@ import { Container } from 'react-bootstrap'
 
 const OurArtsSection = () => (
     <section className={styles.container} id="our-arts-section">
+        <h1 className={styles.title}>NOSSAS ARTES</h1>
         <Swiper
             modules={[FreeMode, Navigation]}
             slidesPerView={'auto'} 
@@ -20,22 +21,14 @@ const OurArtsSection = () => (
             className={styles.slider}
         >
             <SwiperSlide className={styles.slide} id={styles.firstSlide}>
-                <section className={styles.slideItem}>
-                    
-                </section>
             </SwiperSlide>
             <SwiperSlide className={styles.slide} id={styles.secondSlide}>
-                <section className={styles.slideItem}>
-                    
-                </section>
+                
             </SwiperSlide>            
         </Swiper>
         <Container className={styles.textBoxx}>
-            <h1 className={styles.title}>VEJA NOSSAS ARTES</h1>
             <p className={styles.textBox}>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                Desenvolvidas pelo artista pelo artista Jamie, nossas artes são feitas reflexos da combinação de design e programação, garantido a singularidade de cada obra
             </p>
         </Container>
         

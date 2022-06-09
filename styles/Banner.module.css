@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url("/img/banner_6.jpeg") repeat-x;
+    background: url("/img/banner_6.png") repeat-x;
     background-size: cover;
     background-attachment:fixed;
     background-position: center center;
@@ -32,11 +32,13 @@
 }
 
 .bannerTitle {
-    font-size:7rem;
+    font-size:5rem;
+    font-weight: bold;
     color: var(--white-color);
     text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
-    animation: bounce; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s;
+    animation: tada !important; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s !important;
+    text-transform: capitalize;
 }
 
 .bannerSubtitle {
@@ -57,7 +59,14 @@
         height: 40rem;
     }
     .bannerTitle {
-        font-size: 4rem;
+        font-size: 3rem;
+        animation: tada !important; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s !important;
+        text-transform: capitalize;
+    }
+
+    .textBox {
+        padding:0px;
     }
 
     .bannerSubtitle {

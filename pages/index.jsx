@@ -14,12 +14,13 @@ import ContactSection from "./components/ContactSection";
 export default function Home() {
   return(
     <>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"></link>
       <Header/>
       <Banner/>
+      <ArtputSection/>   
       <ServicesSection/>
       <OurArtsSection/>
-      <NFTSection/>
-      <ArtputSection/>      
+      <NFTSection/>   
       <ContactSection/>
     </>
   )

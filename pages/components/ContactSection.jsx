@@ -1,11 +1,11 @@
-import { Container, Form } from 'react-bootstrap';
+import { Container, Form, Button } from 'react-bootstrap';
 import styles from '../../styles/ContactSection.module.css';
 
 export default function ContactSection() {
     return (
         <section className={styles.contactSection}>
             <Container>
-                <h1 className={styles.title}>Contato</h1>
+                <h1 className={styles.title}>FALE CONOSCO</h1>
                 <div className={styles.contentBox}>
                     <div className={styles.formBox}> 
                         <Form>
@@ -23,8 +23,11 @@ export default function ContactSection() {
                             </Form.Group>
                             <Form.Group className="mb-3" controlId="formBasicName">
                                 <Form.Label>Empresa</Form.Label>
-                                <Form.Control type="text" placeholder="Digite seu empresa:" />
+                                <Form.Control type="text" placeholder="Digite sua empresa:" />
                             </Form.Group>
+                            <Button variant="primary" type="submit" className={styles.sendButton}>
+                                Submit
+                            </Button>
                         </Form>            
                     </div>
                     <div className={styles.imgBox}>
