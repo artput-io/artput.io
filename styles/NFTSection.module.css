@@ -7,7 +7,7 @@
 
 .title {
     text-align: center;
-    font-size:2.7rem;
+    font-size:2rem;
     font-family: 'Space Mono';
     color:var(--secondary-color)
 }
@@ -15,7 +15,7 @@
 .contentBox p {
     font-family: 'Ubuntu';
     color:var(--white-color);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     width:100%;
 }
 
@@ -30,7 +30,19 @@
     width:60%;
 }
 
+.destac {
+    padding-top: 2rem !important;
+    font-size:1.3rem !important;
+    font-family: "Space Mono";
+    color: var(--secondary-color) !important;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 @media screen and (min-width:768px) {
+    .container {
+        height:45rem
+    }
     .contentBox {
         display: flex;
         align-items: center;

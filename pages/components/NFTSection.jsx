@@ -3,7 +3,7 @@ import Atropos from 'atropos/react'
 import { Container } from 'react-bootstrap';
 export default function OurJobSection() {
     return (
-        <section className={styles.container}>
+        <section className={styles.container} id="nft-section">
             <Container>
                 <h1 className={styles.title}>PORQUE APOSTAR EM NFT ?</h1>
                 <div className={styles.contentBox}>

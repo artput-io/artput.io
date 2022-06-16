@@ -8,7 +8,7 @@ import { Divider } from 'react-materialize';
 
 export default function ServicesSection() {
     return(
-        <section className={styles.container}>
+        <section className={styles.container} id="services-section">
             <Container>
                 <h1 className={styles.title}>NOSSO TRABALHO</h1>
             </Container>

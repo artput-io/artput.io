@@ -8,11 +8,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Container } from 'react-bootstrap'
 
 const OurArtsSection = () => (
-    <section className={styles.container} id="our-arts-section">
+    <section className={styles.container} id="arts-section">
         <h1 className={styles.title}>NOSSAS ARTES</h1>
         <Swiper
             modules={[FreeMode, Navigation]}
-            slidesPerView={'auto'} 
+            slidesPerView={1} 
             spaceBetween={10}
             autoplay={true}
             loop={false}

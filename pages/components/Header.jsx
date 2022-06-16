@@ -11,18 +11,18 @@ export default function Header() {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     return (
-        <section className={styles.container}>
+        <section className={styles.container} id="header">
             <Navbar className={styles.desktopMenu}>
                 <Container>
-                    <Navbar.Brand href="#home" className={styles.menuLogo}>
+                    <Navbar.Brand href="#header" className={styles.menuLogo}>
                         <Image src={logo} />
                     </Navbar.Brand>
                     <Nav className={styles.menu}>
                         <Nav.Link href="#home-section">Home</Nav.Link>
                         <Nav.Link href="#artput-section">A Artput</Nav.Link>
-                        <Nav.Link href="#nft-section">NFT</Nav.Link>
-                        <Nav.Link href="#arts-section">Nossas Artes</Nav.Link>
                         <Nav.Link href="#services-section">Serviços</Nav.Link>
+                        <Nav.Link href="#arts-section">Nossas Artes</Nav.Link>
+                        <Nav.Link href="#nft-section">NFT</Nav.Link>
                         <Nav.Link href="#contact-section">Contato</Nav.Link>
                     </Nav>
                 </Container>
@@ -43,9 +43,9 @@ export default function Header() {
                                     <Nav className={styles.menuCollapsed}>
                                         <Nav.Link href="#home-section">Home</Nav.Link>
                                         <Nav.Link href="#artput-section">A Artput</Nav.Link>
-                                        <Nav.Link href="#nft-section">NFT</Nav.Link>
-                                        <Nav.Link href="#arts-section">Nossas Artes</Nav.Link>
                                         <Nav.Link href="#services-section">Serviços</Nav.Link>
+                                        <Nav.Link href="#arts-section">Nossas Artes</Nav.Link>
+                                        <Nav.Link href="#nft-section">NFT</Nav.Link>
                                         <Nav.Link href="#contact-section">Contato</Nav.Link>
                                     </Nav>
                                 </Container>
