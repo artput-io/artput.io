@@ -50,7 +50,8 @@
 @media screen and (min-width: 768px) {
 
     .container {
-        height:50rem;
+        height:55rem;
+        padding: 5rem 0rem;
     }
 
     .title {

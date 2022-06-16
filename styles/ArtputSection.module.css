@@ -38,7 +38,7 @@
         align-items: center;
         flex-direction: row;
         padding:5rem;
-        height:40rem;
+        height:55rem;
         width:100%;
         background-color: var(--background-color);
     }

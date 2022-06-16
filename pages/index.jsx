@@ -10,6 +10,7 @@ import NFTSection from "./components/NFTSection"
 import OurArtsSection from "./components/OurArtsSection";
 import ServicesSection from "./components/ServicesSection";
 import ContactSection from "./components/ContactSection";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return(
@@ -22,6 +23,7 @@ export default function Home() {
       <OurArtsSection/>
       <NFTSection/>   
       <ContactSection/>
+      <Footer/>
     </>
   )
 }

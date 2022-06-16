@@ -20,7 +20,7 @@ export default function Header() {
                     <Nav className={styles.menu}>
                         <Nav.Link href="#home-section">Home</Nav.Link>
                         <Nav.Link href="#artput-section">A Artput</Nav.Link>
-                        <Nav.Link href="#services-section">Serviços</Nav.Link>
+                        <Nav.Link href="#services-section">Nosso Trabalho</Nav.Link>
                         <Nav.Link href="#arts-section">Nossas Artes</Nav.Link>
                         <Nav.Link href="#nft-section">NFT</Nav.Link>
                         <Nav.Link href="#contact-section">Contato</Nav.Link>
@@ -43,7 +43,7 @@ export default function Header() {
                                     <Nav className={styles.menuCollapsed}>
                                         <Nav.Link href="#home-section">Home</Nav.Link>
                                         <Nav.Link href="#artput-section">A Artput</Nav.Link>
-                                        <Nav.Link href="#services-section">Serviços</Nav.Link>
+                                        <Nav.Link href="#services-section">Nosso Trabalho</Nav.Link>
                                         <Nav.Link href="#arts-section">Nossas Artes</Nav.Link>
                                         <Nav.Link href="#nft-section">NFT</Nav.Link>
                                         <Nav.Link href="#contact-section">Contato</Nav.Link>
