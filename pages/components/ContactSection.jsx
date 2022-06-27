@@ -1,7 +1,20 @@
+import {useEffect} from 'react'
 import { Container, Form, Button } from 'react-bootstrap';
 import styles from '../../styles/ContactSection.module.css';
+import { motion, useViewportScroll, useAnimation } from 'framer-motion'
+import {useInView} from 'react-intersection-observer'
 
 export default function ContactSection() {
+
+    const { scrollYProgress } = useViewportScroll()
+    const controls = useAnimation();
+    const [ref, inView] = useInView();
+
+    useEffect(() => {
+        if (inView) {
+        controls.start("visible");
+        }
+    }, [controls, inView])
 
     return (
         <section className={styles.contactSection} id="contact-section">
@@ -31,9 +44,12 @@ export default function ContactSection() {
                             </Button>
                         </Form>            
                     </div>
-                    <div className={styles.imgBox}>
+                    <motion.div 
+                        whileInView={{ rotate: 360 }}
+                        transition={{ type: "spring", duration: 5, bounce: 0.6 }}
+                        className={styles.imgBox}>
                         <img src="img/relaunch.svg" alt="" />
-                    </div>
+                    </motion.div>
                 </div>
             </Container>
         </section>

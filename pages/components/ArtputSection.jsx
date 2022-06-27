@@ -1,16 +1,23 @@
 import styles from '../../styles/ArtputSection.module.css'
 import Atropos from 'atropos/react'
 import { Container } from 'react-bootstrap'
-import Image from 'next/image'
+import { motion } from "framer-motion"
 
-export default function ArtputSection() {
+export default function ArtputSection() {    
+        
+
     return (
        <section className={styles.container} id="artput-section">
            <Container>
                 <h1 className={styles.title}>A ARTPUT </h1>
                 <div className={styles.contentBox}>
                     <div className={styles.imageBox}>
-                        <img src="/img/whyArtput.svg" alt="" />
+                        <motion.img 
+                            initial={{ scale: 0.5}}
+                            whileInView={{ scale:1.5 }}
+                            transition={{ duration: 0.5 }}
+                            src="/img/whyArtput.svg" alt="" 
+                        />
                     </div>
                     <div className={styles.textBox}>
                         <p className={styles.text}>

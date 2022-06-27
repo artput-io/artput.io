@@ -1,6 +1,8 @@
 import styles from '../../styles/NFTSection.module.css';
 import Atropos from 'atropos/react'
 import { Container } from 'react-bootstrap';
+import {motion} from 'framer-motion'
+
 export default function OurJobSection() {
     return (
         <section className={styles.container} id="nft-section">
@@ -21,7 +23,12 @@ export default function OurJobSection() {
 
                     </div>
                     
-                    <img src="/img/token.svg" alt="" />
+                    <motion.img 
+                        initial={{ scale: 0.5}}
+                        whileInView={{ scale:1 }}
+                        transition={{ duration: 1 }}
+                        src="/img/token.svg" alt="" 
+                    />
                 </div>
             </Container>
         </section>

@@ -28,7 +28,7 @@ body {
   overflow-x: hidden;
   background-color: var(--background-color);
 
-  transition: all .4s
+  transition: all .8s !important
 }
 
 h1, h2, h3, h4 {
@@ -46,4 +46,5 @@ a {
   box-sizing: border-box;
   margin:0px;
   padding:0px;
+  transition: all .4s !important
 }

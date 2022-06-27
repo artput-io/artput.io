@@ -18,9 +18,14 @@
     padding-right:2rem;
     text-align: left;
     margin-top:30px;
-    font-size:1.3rem;
+    font-size:1.2rem;
     font-family: 'Ubuntu';
     color: var(--white-color)
+}
+
+.imageBox {
+    width:100%;
+    margin: 5rem 0;
 }
 
 .imageBox img {
